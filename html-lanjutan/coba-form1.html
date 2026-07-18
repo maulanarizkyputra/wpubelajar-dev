@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Form pada html</title>
+  </head>
+  <body>
+    <h1>Coba Form dari label, input, checkbox, radio, dan atribut</h1>
+    <form>
+      <label for="nama"
+        >Nama:
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama lengkap"
+          autocomplete="off"
+          required
+          autofocus
+        />
+      </label>
+      <br />
+      <label for="email"
+        >Email:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email"
+          autocomplete="off"
+          required
+        />
+      </label>
+      <br />
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Masukkan password"
+          autocomplete="off"
+          required
+        />
+      </label>
+      <br />
+
+      <br />
+      <label for="hobby1"
+        ><input type="checkbox" id="hobby1" name="hobby1" /> Ngoding
+      </label>
+      <br />
+      <label for="hobby2"
+        ><input type="checkbox" id="hobby2" name="hobby2" /> Gym
+      </label>
+      <br />
+      <label for="hobby3"
+        ><input type="checkbox" id="hobby3" name="hobby3" /> Berolahraga
+      </label>
+    </form>
+    <h3>Jenis Kelamin</h3>
+    <form>
+      <label for="laki-laki"
+        ><input
+          type="radio"
+          id="laki-laki"
+          name="jenis-kelamin"
+          value="laki-laki"
+        />
+        Laki-laki
+      </label>
+      <br />
+      <label for="perempuan"
+        ><input
+          type="radio"
+          id="perempuan"
+          name="jenis-kelamin"
+          value="perempuan"
+        />
+        Perempuan
+      </label>
+      <h3>select dan textarea</h3>
+      <select name="kota" id="negara">
+        <option value="">Pilih Negara</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapura">Singapura</option>
+      </select>
+      <br />
+      <h4>About Me</h4>
+      <textarea
+        name="pesan"
+        id="pesan"
+        placeholder="Tulis tentang diri Anda..."
+        cols="50"
+      ></textarea>
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
